@@ -15,7 +15,6 @@ const addNote = (title, body) => {
         console.log(chalk.red.inverse('Note title taken!'))
     }
 }
-
 const removeNote = (title) => {
      const notes = loadNotes();
      const notesToKeep = notes.filter((note) => note.title !== title)
@@ -27,7 +26,6 @@ const removeNote = (title) => {
         console.log(chalk.red.inverse('No Note Found!'))
      }   
 }
-
 const listNotes = () => {
     const notes = loadNotes()
     console.log(chalk.inverse('Your Notes'))
